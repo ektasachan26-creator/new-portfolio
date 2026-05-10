@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+---
+---
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio — Ekta Sachan</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- ═══════════════════════════════════════
+       CUSTOM CURSOR
+  ═══════════════════════════════════════ -->
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- ═══════════════════════════════════════
+     3D DICE INTRO
+    ═══════════════════════════════════════ -->
+    <div id="dice-intro-stage">
+      <div class="dice-spotlight dice-spotlight-left"></div>
+      <div class="dice-spotlight dice-spotlight-right"></div>
+
+      <div id="dice-floor-glow"></div>
+      <div id="dice-shadow"></div>
+
+      <div id="dice-wrapper">
+        <div id="dice-cube">
+          <div class="dice-face dice-front"></div>
+          <div class="dice-face dice-back"></div>
+          <div class="dice-face dice-right"></div>
+          <div class="dice-face dice-left"></div>
+          <div class="dice-face dice-top"></div>
+          <div class="dice-face dice-bottom"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════
+       VIDEO LIGHTBOX
+  ═══════════════════════════════════════ -->
+    <div id="video-lightbox">
+      <div class="lightbox-inner">
+        <div class="lightbox-label" id="lightbox-label"></div>
+        <button class="lightbox-close" onclick="closeLightbox()">
+          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <line x1="1" y1="1" x2="13" y2="13" />
+            <line x1="13" y1="1" x2="1" y2="13" />
+          </svg>
+          CLOSE
+        </button>
+        <iframe
+          id="lightbox-iframe"
+          src
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════ -->
+    <nav>
+      <div class="nav-logo">EKTA SACHAN</div>
+      <div class="nav-links">
+        <a href="#featured">Works</a>
+        <a href="#shorts">Shorts</a>
+        <a href="#personal">Personal</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+    <section id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">3D Motion Artist · Product Visualization</p>
+        <h1 class="hero-title">
+          <span class="site-name">OBJECTS</span><br>
+          <span>IN</span> MOTION
+        </h1>
+        <p class="hero-subtitle">
+          Crafting hyperrealistic product animations and immersive 3D
+          experiences.
+          Every frame, a world.
+        </p>
+        <a href="#featured" class="hero-cta">
+          View Selected Work <span class="hero-cta-arrow">→</span>
+        </a>
+      </div>
+      <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+       MARQUEE STRIP
+  ═══════════════════════════════════════ -->
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <div class="marquee-item">Blender <span
+            class="marquee-dot"></span></div>
+        <div class="marquee-item">Product Viz <span
+            class="marquee-dot"></span></div>
+        <div class="marquee-item">Motion Design <span
+            class="marquee-dot"></span></div>
+        <div class="marquee-item">3D Animation <span
+            class="marquee-dot"></span></div>
+        <div class="marquee-item">Rendering <span
+            class="marquee-dot"></span></div>
+        <div class="marquee-item">After Effects <span
+            class="marquee-dot"></span></div>
+        <!-- Duplicated for seamless loop -->
+        <div class="marquee-item">Blender <span
+            class="marquee-dot"></span></div>
+        <div class="marquee-item">Product Viz <span
+            class="marquee-dot"></span></div>
+        <div class="marquee-item">Motion Design <span
+            class="marquee-dot"></span></div>
+        <div class="marquee-item">3D Animation <span
+            class="marquee-dot"></span></div>
+        <div class="marquee-item">Rendering <span
+            class="marquee-dot"></span></div>
+        <div class="marquee-item">After Effects <span
+            class="marquee-dot"></span></div>
+      </div>
+    </div>
+
+  <!-- ═══════════════════════════════════════
+       SECTION 01 — FEATURED WORKS
+═══════════════════════════════════════ -->
+<section id="featured" class="reveal">
+  <div class="section-header">
+    <span class="section-num">01</span>
+    <h2 class="section-title">Featured Works</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="featured-grid">
+
+    <!-- HEADPHONES -->
+    <div class="work-card large clickable"
+      onclick="openLightbox('https://www.youtube.com/embed/iwrT2RwsG6c?autoplay=1&rel=0&modestbranding=1', 'Headphones — B&O Beoplay')">
+
+      <div class="corner tl"></div>
+      <div class="corner tr"></div>
+      <div class="corner bl"></div>
+      <div class="corner br"></div>
+
+      <!-- YouTube Thumbnail -->
+      <img class="card-img"
+        src="https://img.youtube.com/vi/iwrT2RwsG6c/maxresdefault.jpg"
+        alt="Headphones">
+
+      <div class="card-overlay"></div>
+
+      <div class="card-hover-overlay">
+        <div class="play-btn">
+          <svg viewBox="0 0 24 24">
+            <polygon points="5,3 19,12 5,21" />
+          </svg>
+        </div>
+        <div class="hover-title">// Play Video</div>
+      </div>
+
+      <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:28px;z-index:2;pointer-events:none;">
+        <div class="card-tag">Product Viz</div>
+        <div class="card-name">Headphones</div>
+        <div class="card-desc">B &amp; O Beoplay · Personal project</div>
+      </div>
+    </div>
+
+    <!-- EARPODS -->
+    <div class="work-card clickable"
+      onclick="openLightbox('https://www.youtube.com/embed/yLF1UF1RcCE?autoplay=1&rel=0&modestbranding=1', 'Earpods — Apple')">
+
+      <div class="corner tl"></div>
+      <div class="corner tr"></div>
+      <div class="corner bl"></div>
+      <div class="corner br"></div>
+
+      <!-- YouTube Thumbnail -->
+      <img class="card-img"
+        src="https://img.youtube.com/vi/yLF1UF1RcCE/maxresdefault.jpg"
+        alt="Apple Earpods">
+
+      <div class="card-overlay"></div>
+
+      <div class="card-hover-overlay">
+        <div class="play-btn">
+          <svg viewBox="0 0 24 24">
+            <polygon points="5,3 19,12 5,21" />
+          </svg>
+        </div>
+        <div class="hover-title">// Play Video</div>
+      </div>
+
+      <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;z-index:2;pointer-events:none;">
+        <div class="card-tag">Product Viz</div>
+        <div class="card-name">Earpods</div>
+        <div class="card-desc">Apple · Personal project</div>
+      </div>
+    </div>
+
+    <!-- THE TRIBE -->
+    <div class="work-card clickable tall"
+      onclick="openLightbox('https://www.youtube.com/embed/RTbvkEI26XQ?autoplay=1&rel=0&modestbranding=1', 'The Tribe')">
+
+      <div class="corner tl"></div>
+      <div class="corner tr"></div>
+      <div class="corner bl"></div>
+      <div class="corner br"></div>
+
+      <!-- YouTube Thumbnail -->
+      <img class="card-img"
+        src="https://img.youtube.com/vi/RTbvkEI26XQ/maxresdefault.jpg"
+        alt="Hair Mask">
+
+      <div class="card-overlay"></div>
+
+      <div class="card-hover-overlay">
+        <div class="play-btn">
+          <svg viewBox="0 0 24 24">
+            <polygon points="5,3 19,12 5,21" />
+          </svg>
+        </div>
+        <div class="hover-title">// Play Video</div>
+      </div>
+
+      <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;z-index:2;">
+        <div class="card-tag">Haircare</div>
+        <div class="card-name">Hair Mask</div>
+        <div class="card-desc">The Tribe · Product animation</div>
+      </div>
+    </div>
+
+    <!-- LIPSTICK -->
+    <div class="work-card clickable"
+      onclick="openLightbox('https://www.youtube.com/embed/uLoocfCK4us?autoplay=1&rel=0&modestbranding=1', 'Lipstick - Mac')">
+
+      <div class="corner tl"></div>
+      <div class="corner tr"></div>
+      <div class="corner bl"></div>
+      <div class="corner br"></div>
+
+      <!-- YouTube Thumbnail -->
+      <img class="card-img"
+        src="https://img.youtube.com/vi/uLoocfCK4us/maxresdefault.jpg"
+        alt="Lipstick">
+
+      <div class="card-overlay"></div>
+
+      <div class="card-hover-overlay">
+        <div class="play-btn">
+          <svg viewBox="0 0 24 24">
+            <polygon points="5,3 19,12 5,21" />
+          </svg>
+        </div>
+        <div class="hover-title">// Play Video</div>
+      </div>
+
+      <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;z-index:2;pointer-events:none;">
+        <div class="card-tag">Beauty</div>
+        <div class="card-name">Lipstick</div>
+        <div class="card-desc">Mac · Personal project</div>
+      </div>
+    </div>
+
+    <!-- FACE SERUM -->
+    <div class="work-card large clickable"
+      onclick="openLightbox('https://www.youtube.com/embed/VmKSDgFXd9Y?autoplay=1&rel=0&modestbranding=1', 'Face Serum - Laneige')">
+
+      <div class="corner tl"></div>
+      <div class="corner tr"></div>
+      <div class="corner bl"></div>
+      <div class="corner br"></div>
+
+      <!-- YouTube Thumbnail -->
+      <img class="card-img"
+        src="https://img.youtube.com/vi/VmKSDgFXd9Y/maxresdefault.jpg"
+        alt="Face Serum">
+
+      <div class="card-overlay"></div>
+
+      <div class="card-hover-overlay">
+        <div class="play-btn">
+          <svg viewBox="0 0 24 24">
+            <polygon points="5,3 19,12 5,21" />
+          </svg>
+        </div>
+        <div class="hover-title">// Play Video</div>
+      </div>
+
+      <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;z-index:2;">
+        <div class="card-tag">Skincare</div>
+        <div class="card-name">Face Serum</div>
+        <div class="card-desc">Laneige · Product animation</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <div class="shorts-row reveal">
+
+  <!-- CAR VIZ 01 -->
+  <div class="short-card clickable"
+    onclick="openLightbox('https://www.youtube.com/embed/AkE5sLCxtpE?autoplay=1&rel=0&modestbranding=1', 'Car Viz 01')">
+
+    <div class="short-card-inner">
+
+      <!-- YouTube Thumbnail -->
+      <img class="card-img"
+        src="https://img.youtube.com/vi/AkE5sLCxtpE/maxresdefault.jpg"
+        alt="Car Viz 01"
+        style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+
+      <div class="card-overlay"></div>
+
+      <div class="short-info">
+        <div class="short-tag">Automotive</div>
+        <div class="short-name">CAR VIZ 01</div>
+      </div>
+
+      <div class="short-popup">
+        <div class="popup-icon">🚗</div>
+        <div class="popup-title">Car Viz 01</div>
+        <div class="popup-sub">
+          Exterior CGI · Dynamic lighting · Reflections
+        </div>
+        <div class="popup-btn">Watch →</div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- CAR VIZ 02 -->
+  <div class="short-card clickable"
+    onclick="openLightbox('https://www.youtube.com/embed/_1cQlZChlr0?autoplay=1&rel=0&modestbranding=1', 'Car Viz 02')">
+
+    <div class="short-card-inner">
+
+      <!-- YouTube Thumbnail -->
+      <img class="card-img"
+        src="https://img.youtube.com/vi/_1cQlZChlr0/maxresdefault.jpg"
+        alt="Car Viz 02"
+        style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+
+      <div class="card-overlay"></div>
+
+      <div class="short-info">
+        <div class="short-tag">Automotive</div>
+        <div class="short-name">CAR VIZ 02</div>
+      </div>
+
+      <div class="short-popup">
+        <div class="popup-icon">🏎</div>
+        <div class="popup-title">Car Viz 02</div>
+        <div class="popup-sub">
+          Sports car CGI · HDRI lighting · Motion blur
+        </div>
+        <div class="popup-btn">Watch →</div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- INTERIOR VIZ -->
+  <div class="short-card clickable"
+    onclick="openLightbox('https://www.youtube.com/embed/FQXPvkuCn4E?autoplay=1&rel=0&modestbranding=1', 'Interior Viz')">
+
+    <div class="short-card-inner">
+
+      <!-- YouTube Thumbnail -->
+      <img class="card-img"
+        src="https://img.youtube.com/vi/FQXPvkuCn4E/maxresdefault.jpg"
+        alt="Interior Viz"
+        style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+
+      <div class="card-overlay"></div>
+
+      <div class="short-info">
+        <div class="short-tag">Architecture</div>
+        <div class="short-name">INTERIOR VIZ</div>
+      </div>
+
+      <div class="short-popup">
+        <div class="popup-icon">🏠</div>
+        <div class="popup-title">Interior Viz</div>
+        <div class="popup-sub">
+          Architectural interior · Natural lighting
+        </div>
+        <div class="popup-btn">Watch →</div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+    <!-- ═══════════════════════════════════════
+       SECTION 03 — PERSONAL EXPERIMENTS
+  ═══════════════════════════════════════ -->
+   <div class="personal-grid reveal">
+
+  <!-- CHESS VIZ -->
+  <div class="personal-card clickable"
+    onclick="openLightbox('https://www.youtube.com/embed/JFEzDhdQtKM?autoplay=1&rel=0&modestbranding=1', 'Chess Viz')">
+
+    <img class="card-img"
+      src="https://img.youtube.com/vi/JFEzDhdQtKM/maxresdefault.jpg"
+      alt="Chess Viz"
+      style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+
+    <div class="card-overlay"></div>
+
+    <div class="personal-hover">
+      <div class="popup-title" style="font-size:16px;">Chess Viz</div>
+      <div class="popup-sub">Light studies · Dramatic shadow play.</div>
+    </div>
+
+    <div class="personal-info">
+      <div class="personal-num">P—01</div>
+      <div class="personal-title">Chess Viz</div>
+      <div class="personal-sub">Light Studies</div>
+    </div>
+  </div>
+
+
+  <!-- MAIL BOX -->
+  <div class="personal-card clickable"
+    onclick="openLightbox('https://www.youtube.com/embed/DuCcdDx2t5o?autoplay=1&rel=0&modestbranding=1', 'Mail Box')">
+
+    <img class="card-img"
+      src="https://img.youtube.com/vi/DuCcdDx2t5o/maxresdefault.jpg"
+      alt="Mail Box"
+      style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+
+    <div class="card-overlay"></div>
+
+    <div class="personal-hover">
+      <div class="popup-title" style="font-size:16px;">Mail Box</div>
+      <div class="popup-sub">
+        Painterly style · Impressionist rendering.
+      </div>
+    </div>
+
+    <div class="personal-info">
+      <div class="personal-num">P—02</div>
+      <div class="personal-title">Mail Box</div>
+      <div class="personal-sub">Painterly Style</div>
+    </div>
+  </div>
+
+
+  <!-- PINK BUNNY -->
+  <div class="personal-card clickable"
+    onclick="openLightbox('https://www.youtube.com/embed/Y5Uf7-g6-ds?autoplay=1&rel=0&modestbranding=1', 'Pink Bunny')">
+
+    <img class="card-img"
+      src="https://img.youtube.com/vi/Y5Uf7-g6-ds/maxresdefault.jpg"
+      alt="Pink Bunny"
+      style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+
+    <div class="card-overlay"></div>
+
+    <div class="personal-hover">
+      <div class="popup-title" style="font-size:16px;">Pink Bunny</div>
+      <div class="popup-sub">
+        Integrating AI · 3D meets AI generation.
+      </div>
+    </div>
+
+    <div class="personal-info">
+      <div class="personal-num">P—03</div>
+      <div class="personal-title">Pink Bunny</div>
+      <div class="personal-sub">Integrating AI</div>
+    </div>
+  </div>
+
+
+  <!-- SUZANNE -->
+  <div class="personal-card clickable"
+    onclick="openLightbox('https://www.youtube.com/embed/aQMxHtOMd6M?autoplay=1&rel=0&modestbranding=1', 'Suzanne Reveal')">
+
+    <img class="card-img"
+      src="https://img.youtube.com/vi/aQMxHtOMd6M/maxresdefault.jpg"
+      alt="Suzanne Reveal"
+      style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+
+    <div class="card-overlay"></div>
+
+    <div class="personal-hover">
+      <div class="popup-title" style="font-size:16px;">Suzanne</div>
+      <div class="popup-sub">
+        Soft body physics · Jelly-like deformation.
+      </div>
+    </div>
+
+    <div class="personal-info">
+      <div class="personal-num">P—04</div>
+      <div class="personal-title">Suzanne Reveal</div>
+      <div class="personal-sub">Soft Body Physics</div>
+    </div>
+  </div>
+
+
+  <!-- TOPPLING BLOCKS -->
+  <div class="personal-card clickable"
+    onclick="openLightbox('https://www.youtube.com/embed/OCH6yXn95C4?autoplay=1&rel=0&modestbranding=1', 'Toppling Blocks')">
+
+    <img class="card-img"
+      src="https://img.youtube.com/vi/OCH6yXn95C4/maxresdefault.jpg"
+      alt="Toppling Blocks"
+      style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+
+    <div class="card-overlay"></div>
+
+    <div class="personal-hover">
+      <div class="popup-title" style="font-size:16px;">
+        Toppling Blocks
+      </div>
+      <div class="popup-sub">
+        Rigid body physics · Satisfying collapse.
+      </div>
+    </div>
+
+    <div class="personal-info">
+      <div class="personal-num">P—05</div>
+      <div class="personal-title">Toppling Blocks</div>
+      <div class="personal-sub">Rigid Body Physics</div>
+    </div>
+  </div>
+
+
+  <!-- DOMINO EFFECT -->
+  <div class="personal-card clickable"
+    onclick="openLightbox('https://www.youtube.com/embed/4dlxEnHF5vw?autoplay=1&rel=0&modestbranding=1', 'Domino Effect')">
+
+    <img class="card-img"
+      src="https://img.youtube.com/vi/4dlxEnHF5vw/maxresdefault.jpg"
+      alt="Domino Effect"
+      style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+
+    <div class="card-overlay"></div>
+
+    <div class="personal-hover">
+      <div class="popup-title" style="font-size:16px;">
+        Domino Effect
+      </div>
+      <div class="popup-sub">
+        Rigid body simulation · Chain reaction.
+      </div>
+    </div>
+
+    <div class="personal-info">
+      <div class="personal-num">P—06</div>
+      <div class="personal-title">Domino Effect</div>
+      <div class="personal-sub">Rigid Body Simulation</div>
+    </div>
+  </div>
+
+
+  <!-- DOMINOS -->
+  <div class="personal-card clickable"
+    onclick="openLightbox('https://www.youtube.com/embed/nJvvlSPS_jo?autoplay=1&rel=0&modestbranding=1', 'Dominos')">
+
+    <img class="card-img"
+      src="https://img.youtube.com/vi/nJvvlSPS_jo/maxresdefault.jpg"
+      alt="Dominos"
+      style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+
+    <div class="card-overlay"></div>
+
+    <div class="personal-hover">
+      <div class="popup-title" style="font-size:16px;">Dominos</div>
+      <div class="popup-sub">
+        Rigid body simulation · Pattern cascade.
+      </div>
+    </div>
+
+    <div class="personal-info">
+      <div class="personal-num">P—07</div>
+      <div class="personal-title">Dominos</div>
+      <div class="personal-sub">Rigid Body Simulation</div>
+    </div>
+  </div>
+
+
+  <!-- BOWLING STRIKE -->
+  <div class="personal-card clickable"
+    onclick="openLightbox('https://www.youtube.com/embed/4BY6dlgz7us?autoplay=1&rel=0&modestbranding=1', 'Bowling Strike')">
+
+    <img class="card-img"
+      src="https://img.youtube.com/vi/4BY6dlgz7us/maxresdefault.jpg"
+      alt="Bowling Strike"
+      style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+
+    <div class="card-overlay"></div>
+
+    <div class="personal-hover">
+      <div class="popup-title" style="font-size:16px;">
+        Bowling Strike
+      </div>
+      <div class="popup-sub">
+        Rigid body physics · Perfect strike.
+      </div>
+    </div>
+
+    <div class="personal-info">
+      <div class="personal-num">P—08</div>
+      <div class="personal-title">Bowling Strike</div>
+      <div class="personal-sub">Rigid Body Physics</div>
+    </div>
+  </div>
+
+</div>
+
+    <!-- ═══════════════════════════════════════
+       FOOTER / CONTACT
+  ═══════════════════════════════════════ -->
+    <footer id="contact">
+      <div class="footer-top">
+        <div class="footer-big">LET'S<br>WORK</div>
+        <div class="footer-right">
+          <div class="footer-status">
+            <span class="footer-dot"></span>
+            Open to full-time opportunities
+          </div>
+          <a href="mailto:ektasachan26@gmail.com" class="footer-email">
+            ektasachan26@gmail.com
+          </a>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/ambitious.3dartist/"
+              target="_blank" class="footer-social-btn">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor"
+                  stroke="none" />
+              </svg>
+              Instagram
+            </a>
+            <a href="https://www.linkedin.com/in/ekta-sachan-67578622a/"
+              target="_blank" class="footer-social-btn">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="2" width="20" height="20" rx="3" />
+                <line x1="8" y1="11" x2="8" y2="17" />
+                <line x1="8" y1="8" x2="8" y2="8.5" />
+                <path d="M12 11v6M12 14a3 3 0 0 1 6 0v3" />
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Ekta Sachan — All rights reserved</p>
+        <p>3D Motion Artist · Product Visualization</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
